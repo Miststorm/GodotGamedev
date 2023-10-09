@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://dk3pcu8lcbh5b"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_msq8y"]
+[ext_resource type="Texture2D" uid="uid://be50n28cpd7k8" path="res://background.png" id="2_tgwnn"]
+[ext_resource type="PackedScene" uid="uid://be1jg787e8y8t" path="res://player1.tscn" id="3_tk7b7"]
+[ext_resource type="PackedScene" uid="uid://b6m8ebf2onps" path="res://player2.tscn" id="4_dnbi2"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_msq8y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4326, 2278)
+texture = ExtResource("2_tgwnn")
+
+[node name="Player" parent="." instance=ExtResource("3_tk7b7")]
+
+[node name="Player2" parent="." instance=ExtResource("4_dnbi2")]
