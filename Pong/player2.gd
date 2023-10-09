@@ -1,5 +1,5 @@
 extends Area2D
-
+#hi
 @export var speed = 700
 var screen_size
 var sizeX
